@@ -46,7 +46,7 @@ export const Header = () => {
     <HeaderEl>
       <Container>
         <Wrapper>
-          <Title>What are we looking for? Click to me if nothing is visible</Title>
+          <Title>What are we looking for ? Click to me if nothing is visible ;)</Title>
           <ModeSwitcher onClick={toggleTheme}>
             {theme === 'light' ? (
               <IoSunny size="16px" />

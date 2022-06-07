@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import {Route, Routes} from "react-router-dom";
 
 import { Header } from './components/Header';
 import { Main } from './components/Main';
@@ -15,13 +15,13 @@ function App() {
     <>
       <Header />
       <Main>
-        <Switch>
-          <Route exact path="/">
+        <Routes>
+          <Route  path="/">
             <HomePage countries={countries} setCountries={setCountries} />
           </Route>
-          <Route path="/country/:name" component={Details} />
-          <Route component={NotFound} />
-        </Switch>
+          <Route path="/country/:name" element={Details} />
+          <Route element={NotFound} />
+        </Routes>
       </Main>
     </>
   );
