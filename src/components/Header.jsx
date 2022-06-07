@@ -30,7 +30,6 @@ const ModeSwitcher = styled.div`
   color: var(--colors-text);
   font-size: var(--fs-sm);
   cursor: pointer;
-  // font-weight: var(--fw-bold);
   text-transform: capitalize;
 `;
 
@@ -47,12 +46,12 @@ export const Header = () => {
     <HeaderEl>
       <Container>
         <Wrapper>
-          <Title>What are we looking for?</Title>
+          <Title>What are we looking for? Click to me)</Title>
           <ModeSwitcher onClick={toggleTheme}>
             {theme === 'light' ? (
-              <IoMoonOutline size="14px" />
+              <IoSunny size="16px" />
             ) : (
-              <IoMoon size="14px" />
+              <IoMoon size="16px" />
             )}{' '}
             <span style={{ marginLeft: '0.75rem' }}>{theme} Theme</span>
           </ModeSwitcher>
