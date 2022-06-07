@@ -21,11 +21,12 @@ const InputContainer = styled.label`
 
 const Input = styled.input.attrs({
   type: 'search',
-  placeholder: 'Search for a country...',
+  placeholder: 'Search for a Aqua Park...',
 })`
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   border: none;
   outline: none;
+  //font-size: 14px;
   color: var(--color-text);
   background-color: var(--colors-ui-base);
 `;
