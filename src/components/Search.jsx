@@ -21,7 +21,7 @@ const InputContainer = styled.label`
 
 const Input = styled.input.attrs({
   type: 'search',
-  placeholder: 'Search for a Aqua Park...',
+  placeholder: 'Search for a countries...',
 })`
   margin-left: 1.5rem;
   border: none;
