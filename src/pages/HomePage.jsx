@@ -59,6 +59,10 @@ export const HomePage = ({ setCountries, countries }) => {
                 title: 'Capital',
                 description: c.capital,
               },
+              {
+                title: 'Time zones',
+                description: c.timezones,
+              },
             ],
           };
 
