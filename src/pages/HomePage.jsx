@@ -7,6 +7,7 @@ import { ALL_COUNTRIES } from '../config';
 import {useNavigate} from "react-router-dom";
 
 export const HomePage = ({ setCountries, countries }) => {
+
   const [filtredCountries, setFilteredCountries] = useState(countries);
 
   const { push } = useNavigate();
