@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import { useNavigate, useParams} from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { IoArrowBack } from 'react-icons/io5';
 import { searchByCountry } from '../config';
 import { Button } from '../components/Button';
@@ -8,7 +8,7 @@ import { Info } from '../components/Info';
 
 export const Details = () => {
   const { name } = useParams();
-  const { push, goBack } = useNavigate();
+  const { push, goBack } = useHistory();
   const [country, setCountry] = useState(null);
 
   console.log(country);
